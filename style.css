@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-sizing: border-box;
+}
+
+html {
+  
+}
+
+body {
+  background: #82bfa0;
+
+  
+}
+
+header {
+  
+}
+
+main {
+  margin: 0px;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #0a516d;
+  color: #000;
+} 
+
+footer {
+  
+}
+
+input, select {
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.botoes input {
+  padding: 7px;
+  margin: 0px 47px;
+  margin-top: 25px;
+}
+
+.botoes input:hover {
+  background: #90ff17;
+  box-shadow: 3px 3px 10px black;
+  color: black;
+  padding: 5px;
+}
+
+select:required:invalid {
+      color: gray;
+    }
+    option[value=""][disabled] {
+      display: none;
+    }
+    option {
+      color: black;
+    }
+.histTransacoes {
+color: white;
+}
