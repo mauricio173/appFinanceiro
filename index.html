@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--<link rel="stylesheet" href="styles.css" />-->
+    <title>Controle de despesas</title>
+    <!--<style>
+      
+    .btn {
+      cursor: pointer;
+      background-color: #9c88ff;
+      box-shadow: var(--box-shadow);
+      color: #fff;
+      border: 0;
+      display: block;
+      font-size: 16px;
+      margin: 10px 0 30px;
+      padding: 10px;
+      width: 100%;
+}
+    
+    .btn:focus,
+    .delete-btn:focus {
+      outline: 0;
+}
+
+
+    </style>-->
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main id="main">
+      <h2 style="margin-top: 10px; color: white;">Adicionar Transações</h2>
+      <br>
+ <form id="formTransacoes">
+      <label for="nome_usuario" required
+             style="color: white;">
+        Nome: &nbsp &nbsp
+      </label> <br>
+      <input type="text" name="nome_usuario" id="nome_usuario" required autocomplete="none"> <br><br>
+      
+      <label for="valor_usuario" required style="color: white;">
+        Valor: &nbsp &nbsp
+      </label> <br>
+      <input type="number" name="valor_usuario" id="valor_usuario" required> <br><br>
+      
+     <!-- <label for="tipo_usuario">
+        Tipo: &nbsp 
+      </label> --> <br> 
+      
+      
+      <div>
+      <select name="selectTipo" id="selectTipo" required> 
+        <option selected disabled required value="" require>
+          Tipo &nbsp &nbsp &nbsp &nbsp
+        </option>
+        
+        <option>
+          Receita
+        </option>
+        <option>
+          Despesa
+        </option>
+      </select> &nbsp &nbsp
+      <input type="button" id="inputAddTipo" name="inputAddTipo" onclick="addTipo()"
+      value="+"> &nbsp
+      
+      <input type="button" id="inputRemoveTipo" name="inputRemoveTipo" onclick="removeTipo()"
+      value="-" style="width: 21px;"> &nbsp
+      
+      <input type="button" id="inputEditarTipo" name="inputEditarTipo" onclick="editarTipo()"
+      value="Editar">
+      </div> <br>
+      
+    <!--  <input type="text" name="tipo_usuario" id="tipo_usuario"> -->
+    
+    
+     <!-- <label for="categoria_usuario" required>
+        Categoria: &nbsp 
+      </label>--> <br>
+    
+          <div>
+      <select name="selectCategoria" id="selectCategoria" required> 
+        <option selected disabled required value="" require>
+          Categoria
+        </option>
+        
+        <option>
+          Salário
+        </option>
+        <option>
+          Mercado
+        </option>
+      </select> &nbsp &nbsp
+      <input type="button" id="inputAddCategoria" name="inputAddCategoria" onclick="addCategoria()"
+      value="+"> &nbsp
+      
+      <input type="button" id="inputRemoveCategoria" name="inputRemoveCategoria" onclick="removeCategoria()"
+      value="-" style="width: 21px;"> &nbsp
+      
+      <input type="button" id="inputEditarCategoria" name="inputEditarCategoria" onclick="editarCategoria()"
+      value="Editar">
+      </div>
+      
+      <br>
+   
+        <!-- <label for="categoria_usuario" required>
+        Conta: &nbsp 
+      </label> --> <br>
+    
+          <div>
+      <select name="selectConta" id="selectConta" required> 
+        <option selected disabled required value="" require>
+          Conta &nbsp &nbsp &nbsp
+        </option>
+        
+        <option>
+          PicPay
+        </option>
+        <option>
+          NuBank
+        </option>
+      </select> &nbsp &nbsp
+      <input type="button" id="inputAddConta" name="inputAddConta" onclick="addConta()"
+      value="+"> &nbsp
+      
+      <input type="button" id="inputRemoveConta" name="inputRemoveConta" onclick="removeConta()"
+      value="-" style="width: 21px;"> &nbsp
+      
+      <input type="button" id="inputEditarConta" name="inputEditarConta" onclick="editarConta()"
+      value="Editar">
+      </div>
+      
+      <br>
+      <div class="botoes">
+      <input type="submit" value="ENVIAR">
+      <input type="reset" value="LIMPAR">
+   </div>
+    </form>
+      
+      <br><br><!--<hr>--><br>
+      <h4 name="histTransacoes" id="histTransacoes" style="color: white;">Histórico de Transações</h4>
+      <span id="regTransacoes"></span>
+      <br><br>
+    </main>
+    <footer></footer>
+    <!--<script src="script.js"></script>-->
+  </body>
+</html>
